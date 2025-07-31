@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Bhatt - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Pawan Bhatt</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello,<br>I'm <span class="highlight">Pawan Bhatt</span>,<br>A <span class="highlight">Software
+                        Developer</span>.</h1>
+                <p>I create amazing with modern technologies. Passionate about clean code, user
+                    experience, and innovative solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me 👋</a>
+                    <a href="#projects" class="btn btn-secondary">View Work 📄</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Pawan1301-bit" target="_blank" title="GitHub">📱</a>
+                    <a href="https://www.linkedin.com/in/pawan-bhatt-4205182a6/" title="LinkedIn" target="_blank">💼</a>
+                    <!-- <a href="#" title="Twitter">🐦</a> -->
+                    <a href="mailto:bhattpawan.1301@gmail.com" title="Email" target="_blank">✉️</a>
+                    <a href="https://leetcode.com/u/bhattpawan/" title="Email" target="_blank">👨‍💻</a>
+                </div>
+            </div>
+            <div class="code-block">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                    </div>
+                </div>
+                <div class="code-content">
+                    <div><span class="keyword">const</span> <span class="property">developer</span> = {</div>
+                    <div>&nbsp;&nbsp;<span class="property">name</span>: <span class="string">'Pawan Bhatt'</span>,
+                    </div>
+                    <div>&nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">'React'</span>, <span
+                            class="string">'Node.js'</span>, <span class="string">'JavaScript'</span>],</div>
+                    <div>&nbsp;&nbsp;<span class="property">isOpenToWork</span>: <span class="value">true</span>,</div>
+                    <div>&nbsp;&nbsp;<span class="property">hireable</span>: <span class="keyword">function</span>() {
+                    </div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> (</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="value">this</span>.<span
+                            class="property">isOpenToWork</span> &&</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="value">this</span>.<span
+                            class="property">skills</span>.<span class="property">length</span> >= <span
+                            class="value">3</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;);</div>
+                    <div>&nbsp;&nbsp;}</div>
+                    <div>};</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <!-- <div class="about-image"> -->
+            <!-- 👨‍💻 -->
+            <img class="about-image" style="height: 400px; width: 320px;" src="./image/pabban.jpg" alt="">
+            <!-- </div> -->
+            <div class="about-text">
+                <h3>Hi There! 👋</h3>
+                <p>Aspiring Software Development with strong programming skills in C++, Python and JavaScript, solid
+                    under-standing of OOP and DBMS concepts, and hands-on experience in building MERN stack web
+                    applications.</p>
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Frontend Development</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Tailwind Css</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h4>Backend Development</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">PHP</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h4>Database & Tools</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">MongoDB</span>
+                    <!-- <span class="skill-tag">PostgreSQL</span> -->
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+            <!-- <div class="skill-card">
+                <h4>DevOps & Cloud</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h4>Real Time Chat Application</h4>
+                    <p>Mern Application used to Chat in real time with features like user authentication</p>
+                    <div class="project-links">
+                        <a href="#" title="currently unavailable" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Pawan1301-bit/RealTime-Chat-Application" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">☁️</div>
+                <div class="project-content">
+                    <h4>Weather Application</h4>
+                    <p>A web application build react + vite using openweather map api that gives real time tempreature
+                        updates of cities</p>
+                    <div class="project-links">
+                        <a href="https://pawanbhatt-weatherapp.vercel.app/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Pawan1301-bit/Weather-app" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📝</div>
+                <div class="project-content">
+                    <h4>Task Tracker</h4>
+                    <p>A application build to track the progress of your task</p>
+                    <div class="project-links">
+                        <a href="https://pawan1301-bit.github.io/Task-Tracker/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Pawan1301-bit/Task-Tracker" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>I'm always open to discussing new opportunities, interesting projects. Feel free to reach out!</p>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <div><a style="color: whitesmoke; text-decoration: none;"
+                            href="mailto:bhattpawan.1301@gmail.com">bhattpawan.1301@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <div>91-7417527965</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <div>Dehradun, India</div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- <p>&copy; 2024 Your Name. All rights reserved.</p> -->
+        <p>Thank You for visiting🙏😊
+        </p>
+    </footer>
+
+</body>
+
+
+<script src="script.js"></script>
+
+</html>
