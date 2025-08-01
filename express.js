@@ -40,7 +40,9 @@ const transporter = nodemailer.createTransport({
 });
 
 //making the connection
+
 mongoose.connect(url).then(() => {
+        
     console.log(`connnected to database successfully`);
 }).catch((err) => {
     console.log(`connectioin with database failed : ${err}`);
