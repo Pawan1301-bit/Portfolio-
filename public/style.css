@@ -76,7 +76,7 @@ nav.scrolled {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
     background: linear-gradient(45deg, #00f5ff, #ff00ff);
     -webkit-background-clip: text;
@@ -128,11 +128,13 @@ nav.scrolled {
 }
 
 /* Hero Section */
+/* Main Hero Section - Add padding-top to account for fixed navbar */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    padding-top: 80px; /* Add this - accounts for 70px navbar + some extra space */
     position: relative;
 }
 
@@ -146,7 +148,7 @@ nav.scrolled {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -556,7 +558,6 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -581,13 +582,35 @@ footer {
         display: flex;
     }
 
+    .hero {
+        padding-top: 120px; /* Increase top padding for mobile */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem; /* Reduce gap on mobile */
+        min-height: auto; /* Remove min-height constraint */
+    }
+
+    .hero-content {
+        padding: 1rem 0; /* Vertical padding only */
+        margin-top: 0; /* Remove margin-top */
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem; /* Slightly smaller on mobile */
+        margin-bottom: 1.5rem;
     }
 
     .about-content {
@@ -602,17 +625,41 @@ footer {
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .social-links {
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+  
+
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding-top: 50px; 
+    }
+
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 0.5rem 0;
     }
 
     .section {
@@ -621,8 +668,36 @@ footer {
 
     .nav-container {
         padding: 0 1rem;
-    }}
+    }
 
+    .about-content img {
+        display: flex;
+        /* justify-content: center; */
+        margin: 0 auto;
+}
+
+     /* .code-block,
+    .hero-code,
+    .code-snippet,
+    .terminal,
+    .code-container {
+        display: none !important;
+    } */
+
+    .code-block {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    overflow: hidden;
+    }
+    .code-content {
+    color: #ffffff;
+    line-height: 2;
+    font-size: smaller;
+}
+}
 
 
 .large-toast{
