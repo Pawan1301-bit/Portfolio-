@@ -44,23 +44,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault(); //Stops the browser's default instant jump behavior.
 
-        Toastify({
-            text: "Thank you for your message! I'll get back to you soon.",
-            duration: 3000,
-            backgroundColor: "#247727ff",
-            gravity: "bottom",
-            position: "right",
-            close: true, // Show close button
-            stopOnFocus: true, // Stop timer on hover
-            className: "large-toast",
-            offset: {
-                x: 50, // horizontal offset
-                y: 70  // vertical offset
-            }
+    // Check if it's a mobile device
+    const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint
 
-        }).showToast();
+    Toastify({
+        text: "message sent successfully.I will get back to you asap ",
+        duration: 12000,
+        backgroundColor: "#247727ff",
+        gravity: "bottom",
+        position: "right",
+        close: true,
+        stopOnFocus: true,
+        className: isMobile ? "large-toast mobile-toast" : "large-toast",
+        offset: {
+            x: isMobile ? 20 : 50, // Less offset on mobile
+            y: isMobile ? 60 : 65  // Adjust vertical position
+        }
+    }).showToast();
 
-    const name = document.getElementById('name').value;    
+    const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
