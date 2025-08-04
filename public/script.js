@@ -49,7 +49,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
     Toastify({
         text: "message sent successfully.I will get back to you asap ",
-        duration: 12000,
+        duration: 4000,
         backgroundColor: "#247727ff",
         gravity: "bottom",
         position: "right",
